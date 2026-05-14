@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Programming | Christopher Thomas</title>
+  <link rel="stylesheet" href="Programming.css" />
+
+</head>
+
+
+
+<body>
+       
+        
+         
+        
+
+    <div class="grid-container">     
+            
+        <Header>                      
+        
+            <div class="grid-cell">
+                <nav>
+                    <ul>
+                        <li><a href="index.html"><h2>Home</h2></a></li>
+                            <li><a href="index.html"><h2>Games</h2></a></li>
+                            <li><a href="Art.html"><h2>Art</h2></a></li>
+                        
+                    </ul>   
+                </nav>
+            </div> 
+            <div class="introHeader">
+                    <h2>Programming Section C#</h2>
+            </div>
+        </Header>
+        
+        <div class="content" style="grid-area: content-1;">
+            
+            <h2>Collission w/ a GameOver Scene</h2>
+            
+            <video controls src="/videos/GameOver.mp4" alt="Video description">
+                Your browser does not support the video tag.
+            </video>
+            
+            
+        </div>
+
+        <div class="content" style="grid-area: content-2;">
+            <h2>Mechanics Implemented</h2>
+                <hr>
+                
+                <ul>
+                    <li>OnCollissionEnter via Enemy or Objects == GameOver</li>
+                    <li>Player Movement</li>
+                    <li>Physics based Shooting</li>
+                    <li>Game State Management</li>
+                    <li>Audio Integration</li>
+                    <li>Animation Control</li>
+                    <li>Polling System</li>  
+                </ul>
+        </div>
+
+        <div class="content-intro" style="grid-area: content-intro-1;">
+            <h2>More Detail</h2>
+            <hr>
+            <h3>OnCollissionEnter( Collider other )</h3>
+            <p>With the OnCollissionEnter method, I was able to detect when the player 
+                collides with an enemy or other objects in the game, 
+                triggering the GameOver scene.</p>
+            
+            
+            <h3>Player Movement</h3>    
+            <p>
+                I implemented player movement using Unity's New Input system, allowing for smooth and responsive controls.
+                This included handling input for moving left and right as well as applying physics for realistic movement.
+            </p>
+            <h3>Physics based Shooting</h3>    
+            <p>
+                I created a shooting mechanic where the player can fire projectiles that are affected by physics.
+                This involved instantiating bullet prefabs and applying forces to them to create a dynamic shooting experience.
+            </p>
+            <h3>Game State Management</h3>    
+            <p>
+                I basically did a gameover state management system where I used a simple boolean flag to track whether the game is over or not. 
+                When the player collides with an enemy, I set this flag to true and trigger the GameOver scene.
+            </p>
+            <h3>Audio Integration</h3>    
+            <p>
+                I integrated audio into the game by creating a custom pixel-art laser sound effect that plays when the player shoots. 
+                This added an extra layer of immersion and feedback for the player, enhancing the overall gaming experience.
+            </p>
+            <h3>Animation Control</h3>    
+            <p>
+                I implemented animation control for the player character, allowing for smooth transitions between different states such as idle, running, and shooting. 
+                This was achieved using Unity's Animator component and setting up appropriate animation parameters to trigger the correct animations based on player actions.
+            </p>
+            <h3>Polling System</h3>
+            <p>The polling system allows for efficient memory without Instantiating a GameObject 
+                and then gameObject.Destroy(), which creates unnessercery data and load on the 
+                system, you can I think do a cooldown where it gets rid of the pooling effect to 
+                minimise the data even more</p>
+        </div>
+            
+    </div>
+</body>
+</html>

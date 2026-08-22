@@ -121,6 +121,12 @@ video{
     height: 30px;
     text-decoration: none;
 }
+.dashboard{
+    text-align: center;
+    width: auto;    
+    background-color: wheat;
+    border: 2px solid black;
+}
 
 .grid-cell a:hover{
     background: wheat;
